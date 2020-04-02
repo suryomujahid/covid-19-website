@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F1F2F3;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Header*/
+header{
+    color: rgb(230, 83, 67);
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.title{
+    padding: 60px;
+}
+header h4{
+    font-weight: lighter;
+}
+header h1{
+    font-size: 3em;
+}
+
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(235, 97, 82);
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+nav > ul > li{
+    float: left;
+    list-style-type: none;
+}
+.scrollNav{
+    margin-left: -6%;
+    width: 111%;
+    border-radius: 0px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    transition: ease 1s;
+}
+nav a:hover{
+    background-color: rgb(177, 73, 61);
+}
+
+
+/*Main*/
+main{
+    padding: 16px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    margin-bottom: 20px;
+}
+.content{
+    width: 75%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+article{
+    background-color: rgb(240, 240, 240);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 6px;
+}
+article > h2{
+    color: rgb(219, 91, 77);
+    margin: 8px;
+}
+article > img{
+    width: 100%;
+    max-height: 450px;
+    object-fit: scale-down;
+}
+article > ul{
+    padding-left: 32px;
+    margin: 8px;
+}
+article > p{
+    margin: 8px;
+}
+.source{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.500);
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.source > a{
+    color: rgba(0, 230, 65, 0.589);
+}
+.light-color{
+    color: #2D3436;
+}
+.light-bg-color{
+    background-color: rgb(240, 240, 240);
+}
+aside{
+    padding: 6px;
+    width: 25%;
+    float: left;
+}
+.card{
+    text-align: center;
+    padding: 14px;
+    border-radius: 20px;
+}
+.card h3, .card h2{
+    color:rgba(212, 78, 63, 0.856) ;
+}
+.card > img{
+    width: 80%;
+    border-radius: 50%;
+    margin: 8px;
+}
+.card > ul > li > a > img{
+    width: 25px;
+    margin-bottom: -6px;
+    margin-right: 6px;
+}
+.card > ul > li{
+    list-style-type:none;
+    margin-top: 24px;
+    margin-bottom: 24px ;
+}
+.card a{
+    background-color: rgba(41, 196, 49, 0.712);
+    border-radius: 20px;
+    padding: 10px;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    transition: linear 0.2s;
+}
+.card a:hover{
+    border: solid 3px rgb(216, 80, 65);
+    background-color: rgba(91, 223, 98, 0.712);
+}
+
+/*FOOTER*/
+footer{
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(235, 97, 82);
+    color: white;
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .source {
+        font-size: 8px;
+        margin-top: 0;
+    }
+    .content, aside{
+        width: 100%;
+    }
+    .card > img{
+        width: 60%;
+    }
+ }
+ @media screen and (max-width: 500px){
+     nav ul li a{
+         font-size: 14px;
+     }
+     article > h2{
+         font-size: 20px;
+     }
+ }
+ @media screen and (max-width: 320px){
+    nav ul li a{
+        font-size: 12px;
+    }
+    article > h2{
+        font-size: 18px;
+    }
+    header h1{
+        font-size: 36px;
+    }
+    header h4{
+        font-size: 14px;
+    }
+ }
